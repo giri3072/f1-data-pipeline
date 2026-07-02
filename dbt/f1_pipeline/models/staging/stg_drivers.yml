@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_drivers
+    description: "One clean row per driver in the 2024 season."
+    columns:
+      - name: driver_id
+        description: "Unique driver identifier from the API."
+        tests:
+          - unique
+          - not_null

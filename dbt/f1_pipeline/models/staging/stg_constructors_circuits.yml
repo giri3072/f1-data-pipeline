@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_constructors
+    columns:
+      - name: constructor_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_circuits
+    columns:
+      - name: circuit_id
+        tests:
+          - unique
+          - not_null

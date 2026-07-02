@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_races
+    columns:
+      - name: race_id
+        tests: [unique, not_null]
+      - name: circuit_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_circuits')
+              field: circuit_id
+
+  - name: stg_results
+    columns:
+      - name: race_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_races')
+              field: race_id
+      - name: driver_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_drivers')
+              field: driver_id
+      - name: constructor_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_constructors')
+              field: constructor_id

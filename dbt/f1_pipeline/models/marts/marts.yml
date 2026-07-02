@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_drivers
+    columns:
+      - name: driver_id
+        tests: [unique, not_null]
+
+  - name: dim_constructors
+    columns:
+      - name: constructor_id
+        tests: [unique, not_null]
+
+  - name: dim_circuits
+    columns:
+      - name: circuit_id
+        tests: [unique, not_null]
+
+  - name: fct_results
+    columns:
+      - name: driver_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_drivers')
+              field: driver_id
+      - name: constructor_id
+        tests:
+          - relationships:
+              to: ref('dim_constructors')
+              field: constructor_id

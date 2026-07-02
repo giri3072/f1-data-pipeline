@@ -1,0 +1,12 @@
+f1_pipeline:
+  outputs:
+    dev:
+      dbname: f1
+      host: postgres
+      pass: f1_pass
+      port: 5432
+      schema: dbt_f1
+      threads: 4
+      type: postgres
+      user: f1_user
+  target: dev

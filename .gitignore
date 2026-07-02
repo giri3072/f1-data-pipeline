@@ -1,0 +1,7 @@
+logs/
+.env
+__pycache__/
+*.pyc
+dbt/f1_pipeline/target/
+dbt/f1_pipeline/dbt_packages/
+dbt/f1_pipeline/logs/dbt_docs/

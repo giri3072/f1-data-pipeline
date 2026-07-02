@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: f1_raw          # the name we'll reference in code
+    schema: raw           # the actual Postgres schema
+    tables:
+      - name: races
+      - name: drivers
+      - name: constructors
+      - name: circuits
+      - name: results
