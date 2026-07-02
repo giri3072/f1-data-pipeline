@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="F1 Data Pipeline banner with a stylized Formula 1 car">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050b1c"/>
+      <stop offset="0.55" stop-color="#0a1e40"/>
+      <stop offset="1" stop-color="#122a55"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.68" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#1d4a9e" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#1d4a9e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b47a0"/>
+      <stop offset="1" stop-color="#0a1f4a"/>
+    </linearGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3a5aa0"/>
+      <stop offset="0.7" stop-color="#1c3f86"/>
+      <stop offset="1" stop-color="#0e1f43"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#glow)"/>
+
+  <!-- asphalt strip -->
+  <rect x="0" y="352" width="1200" height="68" fill="#060d1e"/>
+  <g stroke="#ffd200" stroke-width="4" stroke-dasharray="34 26" opacity="0.5">
+    <line x1="0" y1="388" x2="1200" y2="388"/>
+  </g>
+
+  <!-- speed streaks (behind the car) -->
+  <g stroke-linecap="round">
+    <line x1="70"  y1="214" x2="410" y2="214" stroke="#e10600" stroke-width="9"  opacity="0.5"/>
+    <line x1="45"  y1="246" x2="360" y2="246" stroke="#ffd200" stroke-width="6"  opacity="0.5"/>
+    <line x1="95"  y1="300" x2="420" y2="300" stroke="#ffffff" stroke-width="5"  opacity="0.3"/>
+    <line x1="60"  y1="330" x2="340" y2="330" stroke="#ffd200" stroke-width="4"  opacity="0.3"/>
+    <line x1="120" y1="270" x2="300" y2="270" stroke="#e10600" stroke-width="4"  opacity="0.35"/>
+  </g>
+
+  <!-- ground shadow -->
+  <ellipse cx="785" cy="352" rx="440" ry="16" fill="#000000" opacity="0.4"/>
+
+  <!-- ===== F1 CAR (facing right) ===== -->
+  <g>
+    <!-- rear wing (left) -->
+    <rect x="452" y="176" width="98" height="13" rx="3" fill="#0d2350"/>
+    <rect x="452" y="193" width="98" height="9"  rx="2" fill="#0d2350"/>
+    <rect x="452" y="188" width="98" height="4"  fill="#e10600"/>
+    <rect x="452" y="176" width="15" height="90" rx="3" fill="#e10600"/>
+    <rect x="478" y="250" width="74" height="9"  rx="2" fill="#0d2350"/>
+
+    <!-- body silhouette -->
+    <path d="M500 250
+             C505 240 520 235 545 233
+             C600 230 650 226 690 220
+             C705 200 720 192 742 192
+             C752 192 756 196 758 202
+             C762 210 772 214 786 214
+             L800 214
+             C838 214 880 220 930 234
+             C975 246 1010 250 1055 249
+             C1100 248 1130 249 1155 253
+             C1170 255 1178 260 1179 267
+             C1179 273 1171 277 1153 278
+             C1100 280 1050 281 1000 281
+             L560 282
+             C528 282 508 274 500 262 Z"
+          fill="url(#body)" stroke="#081533" stroke-width="2"/>
+
+    <!-- red accent band -->
+    <path d="M520 256
+             C640 249 760 240 900 250
+             C1000 257 1080 258 1152 262
+             L1152 269
+             C1080 266 1000 266 900 259
+             C760 250 640 261 520 267 Z"
+          fill="#e10600" opacity="0.92"/>
+    <!-- yellow pinstripe -->
+    <path d="M560 244 C700 234 850 232 1050 246" fill="none" stroke="#ffd200" stroke-width="3" opacity="0.85"/>
+
+    <!-- cockpit opening -->
+    <path d="M782 214 C792 206 828 206 840 216 C828 222 792 222 782 214 Z" fill="#070d20"/>
+    <!-- halo -->
+    <path d="M846 216 C848 196 800 190 784 209" fill="none" stroke="#c7d3e8" stroke-width="6" opacity="0.9"/>
+    <line x1="812" y1="199" x2="810" y2="213" stroke="#c7d3e8" stroke-width="4" opacity="0.8"/>
+
+    <!-- driver number -->
+    <text x="648" y="256" font-family="'Arial Black', Arial, sans-serif" font-size="46" font-style="italic" font-weight="900" fill="#ffffff" stroke="#0d2350" stroke-width="1.5">1</text>
+
+    <!-- nose tip highlight -->
+    <path d="M1120 258 C1150 258 1172 262 1179 267 C1172 272 1150 275 1120 274 Z" fill="#0a1f4a"/>
+
+    <!-- front wing (right) -->
+    <rect x="1116" y="280" width="70" height="11" rx="2" fill="#0d2350"/>
+    <rect x="1120" y="269" width="58" height="8"  rx="2" fill="#0d2350"/>
+    <rect x="1116" y="286" width="70" height="4"  fill="#e10600"/>
+    <rect x="1176" y="252" width="12" height="46" rx="3" fill="#e10600"/>
+
+    <!-- wheels -->
+    <g>
+      <!-- rear -->
+      <circle cx="555" cy="288" r="55" fill="#141518" stroke="#000" stroke-width="2"/>
+      <circle cx="555" cy="288" r="43" fill="none" stroke="#ffd200" stroke-width="2" opacity="0.4"/>
+      <circle cx="555" cy="288" r="27" fill="url(#rim)"/>
+      <g stroke="#9fb3d1" stroke-width="3" opacity="0.85">
+        <line x1="555" y1="288" x2="555" y2="263"/>
+        <line x1="555" y1="288" x2="579" y2="296"/>
+        <line x1="555" y1="288" x2="570" y2="309"/>
+        <line x1="555" y1="288" x2="540" y2="309"/>
+        <line x1="555" y1="288" x2="531" y2="296"/>
+      </g>
+      <circle cx="555" cy="288" r="6" fill="#ffd200"/>
+      <!-- front -->
+      <circle cx="1000" cy="288" r="55" fill="#141518" stroke="#000" stroke-width="2"/>
+      <circle cx="1000" cy="288" r="43" fill="none" stroke="#ffd200" stroke-width="2" opacity="0.4"/>
+      <circle cx="1000" cy="288" r="27" fill="url(#rim)"/>
+      <g stroke="#9fb3d1" stroke-width="3" opacity="0.85">
+        <line x1="1000" y1="288" x2="1000" y2="263"/>
+        <line x1="1000" y1="288" x2="1024" y2="296"/>
+        <line x1="1000" y1="288" x2="1015" y2="309"/>
+        <line x1="1000" y1="288" x2="985" y2="309"/>
+        <line x1="1000" y1="288" x2="976" y2="296"/>
+      </g>
+      <circle cx="1000" cy="288" r="6" fill="#ffd200"/>
+    </g>
+  </g>
+
+  <!-- ===== TITLE ===== -->
+  <g font-family="'Arial Black', Arial, sans-serif">
+    <text x="64" y="112" font-size="60" font-weight="900" letter-spacing="1">
+      <tspan fill="#e10600">F1</tspan><tspan fill="#ffffff"> DATA</tspan>
+    </text>
+    <text x="64" y="172" font-size="60" font-weight="900" letter-spacing="1" fill="#ffffff">PIPELINE</text>
+    <rect x="66" y="186" width="150" height="6" fill="#e10600"/>
+    <text x="66" y="220" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#ffd200">Airflow &#183; dbt &#183; PostgreSQL &#183; Metabase</text>
+  </g>
+</svg>
