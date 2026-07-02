@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/f1_car.svg" alt="F1 Data Pipeline" width="100%"/>
+<img src="assets/f1_car.svg" width="100%"/>
 
 <br/>
 
